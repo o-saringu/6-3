@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF=8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="midasi">
+<h1>プログラム復習コンテンツ</h1>
+<a href="https://o-saringu.github.io/mokuji/">
+<div class="home"></div>
+</a>
+</div>
+
+<div class="oomidasi"><p>scale()関数</div>
+
+<div class="yoko">
+	<div class="yoko1">
+	<div class="komidasi1"><p>サンプルコードの結果</p></div>
+	<img src = "6-3.png">
+	</div>
+	<div class="yoko1">
+	<div class="komidasi2"><p>サンプルコード</div>
+<div class="code">　	
+	<p>　　	void setup(){
+	<p>　　	　size(120, 120); 
+	<p>　　	｝
+	<p>　　	
+	<p>　　	void draw(){
+	<p>　　	　translate(mouseX, mouseY);
+	<p>　　	　scale(mouseX/60.0);
+	<p>　　	　rect(-15, -15, 30, 30);
+	<p>　　	}　　
+	</div>
+	</div>
+</div>
+
+<div class="komidasi3"><p>説明文</div>
+<div class="ep">
+	<p>　scale()関数は座標系を伸縮させる関数。
+	<p>　画面上の図形はすべて座標の伸縮に応じて拡大、収縮する。
+	<p>　scale(2)と指定すると2倍になり、scale(0.5)とすると1/2倍となる。
+	<p>　（0，0）が変形の基準となるため、図形の中心から伸び縮みさせる場合は、translate()、scale()、rect()の順番で実行することで可能。
+	<p>　例では、マウスのx座標によって大きさを変えるようにしており、最大でウィンドウサイズの120を当てはめて、（120/60 = 2）となり、0~2倍の変域となっている。
+
+</div>
+</body>
+
