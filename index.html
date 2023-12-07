@@ -1,7 +1,14 @@
 <!DOCTYPE html>
+<html lang="jp">
+
 <head>
-<meta charset="UTF=8">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=M+PLUS+1p:wght@500&family=Oswald&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -22,14 +29,14 @@
 	<div class="yoko1">
 	<div class="komidasi2"><p>サンプルコード</div>
 <div class="code">　	
-	<p>　　	void setup(){
-	<p>　　	　size(120, 120); 
+	<p>　　	<a href="https://o-saringu.github.io/5-2/"target="_blank" rel="noopener noreferrer" >void setup()</a>{
+	<p>　　	　<a href="https://o-saringu.github.io/size/"target="_blank" rel="noopener noreferrer" >size</a>(120, 120); 
 	<p>　　	｝
 	<p>　　	
-	<p>　　	void draw(){
-	<p>　　	　translate(mouseX, mouseY);
-	<p>　　	　scale(mouseX/60.0);
-	<p>　　	　rect(-15, -15, 30, 30);
+	<p>　　	<a href="https://o-saringu.github.io/5-1/"target="_blank" rel="noopener noreferrer" >void draw()</a>{
+	<p>　　	　<a href="https://o-saringu.github.io/6-1/"target="_blank" rel="noopener noreferrer" >translate</a>(<a href="https://o-saringu.github.io/5-3/"target="_blank" rel="noopener noreferrer" >mouseX, mouseY</a>);
+	<p>　　	　scale(<a href="https://o-saringu.github.io/5-3/"target="_blank" rel="noopener noreferrer" >mouseX</a>/60.0);
+	<p>　　	　<a href="https://o-saringu.github.io/rect/"target="_blank" rel="noopener noreferrer" >rect</a>(-15, -15, 30, 30);
 	<p>　　	}　　
 	</div>
 	</div>
@@ -40,7 +47,7 @@
 	<p>　scale()関数は座標系を伸縮させる関数。
 	<p>　画面上の図形はすべて座標の伸縮に応じて拡大、収縮する。
 	<p>　scale(2)と指定すると2倍になり、scale(0.5)とすると1/2倍となる。
-	<p>　（0，0）が変形の基準となるため、図形の中心から伸び縮みさせる場合は、translate()、scale()、rect()の順番で実行することで可能。
+	<p>　（0，0）が変形の基準となるため、図形の中心から伸び縮みさせる場合は、<a href="https://o-saringu.github.io/6-1/"target="_blank" rel="noopener noreferrer" >translate()</a>、scale()、<a href="https://o-saringu.github.io/rect/"target="_blank" rel="noopener noreferrer" >rect()</a>の順番で実行することで可能。
 	<p>　例では、マウスのx座標によって大きさを変えるようにしており、最大でウィンドウサイズの120を当てはめて、（120/60 = 2）となり、0~2倍の変域となっている。
 
 </div>
